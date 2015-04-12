@@ -8,7 +8,7 @@ http.createServer( function (req, res) {
 		return res.end();
 	}
 
-	if (req.url === '/api/pin') {
+	if (req.url === '/api/gate') {
 		if (req.method === 'POST') {
 			req.on('data', function (chunk) {
 				var data = JSON.parse(chunk.toString());
